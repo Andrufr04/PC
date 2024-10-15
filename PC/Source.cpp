@@ -11,12 +11,15 @@ int main()
 	Kayboard kay("kkk", 30);
 	Headphones hea("hhh", 40);
 
-	PC MyPC(&mon, &kay, &mou, &hea, "rrr", 100, "ccc", 200, "sss", 100);
-	MyPC.Output();
-
-	cout << endl << "Total Price: " << MyPC.GetPrise() <<endl;
+	PC* MyPC = new PC(&mon, &kay, &mou, &hea, "rrr", 100, "ccc", 200, "sss", 100);
+	MyPC->Output();
+	cout << endl << "Total Price: " << MyPC->GetPrise() << endl << endl;
 	
+	delete MyPC;
 
+	PC NewPC(&mon, &kay, &mou, &hea, "rrr2", 1000, "ccc2", 2000, "sss2", 1000);
+	NewPC.Output();
+	cout << endl << "Total Price: " << NewPC.GetPrise() << endl;
 
 
 
