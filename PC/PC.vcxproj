@@ -148,9 +148,6 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="SSD.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="PC.rc" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
